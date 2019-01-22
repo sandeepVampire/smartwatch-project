@@ -1,2 +1,2 @@
 # smartwatch-project
-This is the project for webapp for simple smartwatch 
+webapp for simple smartwatch using django and javascript.
