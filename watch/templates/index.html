@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% endblock %}
+
+{% block maincontent %}
+    <div id="main_menu">
+        <div id="menu_items">
+            <a href="contact"><img id="contacts" src={% static "images/contact.png" %} alt="contacts"></a>
+            <img id="msgbox" src={% static "images/message.png" %} alt="message">
+            <img id="phone" src={% static "images/phone.png" %} alt="contacts">
+        </div>
+    </div>
+    <div id="middle">
+        <div id="main">
+            <h2>No sim</h2>
+            <h2 id="time"></h2>
+            <h2 id="date"></h2>
+        </div>
+        <div id="buttons">
+            <img id="phone" src={% static "images/phone.png" %} alt="contacts">
+            <img id="msgbox" src={% static "images/message.png" %} alt="message">
+        </div>
+    </div>
+{% endblock %}
+{% block menubar %}
+    <div id="menu-bar">
+        <a id="menu" onclick="myFunction()">Menu</a>
+        <a class="contact" href="#">Contacts</a>
+    </div>
+    <div id="back-bar">
+        <a id="menu" ></a>
+        <a id="back" onclick="backFunction()">back</a>
+    </div>
+
+<script>
+function realtime() {
+  let time = moment().format('h:mm:ss a');
+  let date = moment().format("ddd, MMM YYYY");
+  document.getElementById('time').innerHTML = time;
+  document.getElementById('date').innerHTML = date;
+  setInterval(() => {
+    time = moment().format('h:mm:ss a');
+    let date = moment().format("ddd, MMM YYYY");
+    document.getElementById('time').innerHTML = time;
+    document.getElementById('date').innerHTML = date;
+  }, 1000)
+}
+
+function myFunction() {
+  document.getElementById("middle").style.display = "none";
+  document.getElementById("main_menu").style.display = "block";
+  document.getElementById("menu-bar").style.display = "none";
+  document.getElementById("back-bar").style.display = "block";
+}
+
+function backFunction() {
+  document.getElementById("middle").style.display = "block";
+  document.getElementById("main_menu").style.display = "none";
+  document.getElementById("back-bar").style.display = "none";
+  document.getElementById("menu-bar").style.display = "block";
+}
+realtime();
+</script>
+{% endblock %}

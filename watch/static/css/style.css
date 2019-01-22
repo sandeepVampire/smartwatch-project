@@ -1,0 +1,111 @@
+.trapezoidtop {
+	border-bottom: 100px solid #9b9fa0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0;
+	width: 150px;
+	margin-left:480px;
+}
+
+#screen {
+    border-radius: 25px;
+    border: 2px solid #022933;
+    width: 350px;
+    height: 350px;
+    margin-left: 450px;
+    border-width:25px;
+}
+
+.trapezoiddown {
+	border-top: 100px solid #9b9fa0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0;
+	width: 150px;
+	margin-left:480px;
+}
+
+.notification{
+  height: 30px;
+  width: 350px;
+  background-color: #00030a;
+  border-left:0px;
+
+}
+.material-icons{
+    color:white;
+ }
+
+#signal{
+ 	 margin-left:5px;
+	 align:left;
+	 padding-top:2px;
+}
+
+#bluetooth{
+ 	 margin:1px;
+	 align:left;
+	 padding-top:2px;
+
+}
+#battery{
+	margin-left:250px;
+	align:left;
+	padding-top:2px;
+ }
+
+#main{
+    padding-top : 15px;
+ 	text-align : center;
+ }
+
+#middle{
+ 	background-image : url('/static/images/bg/bgcolor1.jpg');
+ 	height : 290px;
+ }
+
+#buttons{
+    padding-top:20px;
+}
+
+#phone{
+      padding-left:40px;
+    }
+
+#msgbox{
+      padding-left:160px;
+
+    }
+a{
+	text-decoration: none;
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+a:hover{
+    color:red;
+}
+
+#menu-bar{
+    height:25px;
+    padding-top:3px;
+}
+
+a.contact{
+    padding-left:180px;
+}
+
+a#menu {
+    padding-left:17px;
+}
+
+#main_menu{
+    display: none;
+    height : 270px;
+    background-image : url('/static/images/bg/bgcolor2.jpg');
+}
+
+#back-bar {
+    display: none;
+}

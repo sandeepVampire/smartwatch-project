@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+
+<h1>contacts </h1>
+<div class="list">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+        </tr>
+        {% for c in contacts %}
+            <tr>
+                <td>{{ c.first_name }}</td>
+                <td>{{ c.phone }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+
+{% block menubar %}
+    <div id="menu-bar">
+        <a id="menu" href="/addcontact">Add New</a>
+        <a class="contact" href="/">Back</a>
+    </div>
+{% endblock %}
